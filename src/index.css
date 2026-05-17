@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-50: #fdf8e8;
+  --color-gold-100: #f9edc4;
+  --color-gold-200: #f3d98a;
+  --color-gold-300: #edc450;
+  --color-gold-400: #e6ad20;
+  --color-gold-500: #d4960e;
+  --color-gold-600: #b8770a;
+  --color-gold-700: #93570b;
+  --color-gold-800: #7a4511;
+  --color-gold-900: #683914;
+
+  --color-dark-800: #1f1a12;
+  --color-dark-900: #141009;
+  --color-dark-950: #0a0804;
+
+  --color-cream-50: #fffdf7;
+  --color-cream-100: #fef9ed;
+  --color-cream-200: #fdf3db;
+  --color-cream-300: #f8e8c0;
+  --color-cream-400: #f0d89a;
+  --color-cream-500: #e8c87a;
+  --color-cream-600: #d4a84a;
+
+  --font-playfair: "Playfair Display", serif;
+  --font-inter: "Inter", sans-serif;
+  --font-cormorant: "Cormorant Garamond", serif;
+  --font-bodoni: "Bodoni Moda", serif;
+  --font-lavishly: "Lavishly Yours", cursive;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: #0a0804;
+}
+
+/* Gold shimmer — dark version */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.gold-shimmer-text {
+  background: linear-gradient(90deg, #93570b, #edc450, #d4960e, #f3d98a, #93570b);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 5s linear infinite;
+}
+
+.gold-shimmer-text-light {
+  background: linear-gradient(90deg, #7a4511, #b8770a, #93570b, #b8770a, #7a4511);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 5s linear infinite;
+}
+
+.gold-shimmer-border {
+  background: linear-gradient(90deg, #93570b, #edc450, #d4960e, #f3d98a, #93570b);
+  background-size: 200% auto;
+  animation: shimmer 4s linear infinite;
+}
+
+.gold-shimmer-border-light {
+  background: linear-gradient(90deg, #d4960e, #f3d98a, #edc450, #f9edc4, #d4960e);
+  background-size: 200% auto;
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-gold {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes pulse-gold-light {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.4; }
+}
