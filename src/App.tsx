@@ -56,7 +56,10 @@ export default function App() {
   const [barberIndex, setBarberIndex] = useState(0);
   const isLight = theme === "light";
 
-  const barberImages = ["/images/barber-portrait.jpg", "/images/barber.png"];
+  const barberImages = [
+  `${import.meta.env.BASE_URL}images/barber-portrait.jpg`,
+  `${import.meta.env.BASE_URL}images/barber.png`
+];
 
   useEffect(() => {
     const interval = setInterval(() => {
