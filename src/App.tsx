@@ -3,14 +3,20 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Sun, Moon } from "lucide-react";
 
 const services = [
-  { name: "Classic Haircut", price: "$35" },
-  { name: "Skin Fade", price: "$40" },
-  { name: "Beard Trim", price: "$25" },
-  { name: "Hot Towel Shave", price: "$30" },
-  { name: "Hair & Beard Combo", price: "$55" },
-  { name: "Kids Cut", price: "$20" },
-  { name: "ballouchy", price: "$00" },
-  { name: "The Royal Treatment", price: "$90" },
+  { name: "Coupe de cheveux normale", price: "7Dt" },
+  { name: "Coupe Dégradé", price: "8Dt" },
+  { name: "Coupe enfant", price: "6Dt" },
+  { name: "Coupe de barbe normale", price: "3Dt" },
+  { name: "Coupe de barbe dégradée", price: "3Dt" },
+  { name: "Défrisage", price: "24Dt" },
+  { name: "Protéine / Kératine", price: "60Dt" },
+  { name: "Shampoing (Lavage cheveux)", price: "2Dt" },
+  { name: "Brushing", price: "4Dt" },
+  { name: "Gommage ", price: "4Dt" },
+  { name: "Masque vert", price: "5Dt" },
+  { name: "Masque blanc", price: "7Dt" },
+  { name: "Épilation à la cire (Chma3)", price: "5Dt" },
+  { name: "Soin de visage", price: "30Dt" },
 ];
 
 /* ── SVG ornament ── */
